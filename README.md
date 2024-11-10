@@ -13,7 +13,7 @@ using the version 3.12.0 and using flask as a web framework
 * [Java](https://www.java.com/es/): Version 17
 * [Spring Boot](https://spring.io/projects/spring-boot): Version 3.3.5
 * [H2 Database](https://www.h2database.com/html/main.html)
-* [Maven](https://maven.apache.org)
+* [Maven](https://maven.apache.org): Version 3.9.9
 ## Installation
 ***
 There are two methods to install this project.
@@ -24,67 +24,49 @@ Verify you are running Docker or Docker Desktop and open a terminal in the folde
 
 Copy the repository
 ```
-git clone https://github.com/nava2105/transcript_pdf.git
+git clone https://github.com/nava2105/kanban-app.git
 ```
 Enter the directory
 ```
-cd ../transcriptor
+cd ../kanban-app
 ```
 Build and run the container
 ```
 docker-compose up --build
 ```
 Open a browser and enter to
-[http://localhost:5000](http://localhost:5000)
+[http://localhost:8080](http://localhost:8080)
 #### Not using Docker
-Verify you are python version 3.12.0
+Verify you are using Java version 17
 ```
-python --version
+java -version
+```
+Verify you have Maven installed
+```
+mvn -version
 ```
 Copy the repository
 ```
-git clone https://github.com/nava2105/transcript_pdf.git
+git clone https://github.com/nava2105/kanban-app.git
 ```
 Enter the directory
 ```
-cd ../transcriptor
+cd ../kanban-app
 ```
-Create a virtual environment
+Compile the project directly form mvn
 ```
-python -m venv .venv
-```
-Activate your virtual environment
-* In Windows
-```
-.venv\Scripts\activate
-```
-In macOS or Linux
-```
-source .venv/bin/activate
-```
-Build the dependencies
-```
-pip install requirements.txt -r
-```
-Run front.py file
-* By using python command
-```
-python front.py
-```
-* If you are using Python 3 and python points to Python 2 on your system, use python3 instead:
-```
-python3 front.py
+mvn spring-boot:run
 ```
 Open a browser and enter to
-[http://localhost:5000](http://localhost:5000)
+[http://localhost:8080](http://localhost:8080)
 ### Via Docker-hub
 Pull the image from Docker-hub
 ```
-docker pull na4va4/transcriptor
+docker pull na4va4/kanban-board
 ```
 Start a container from the image
 ```
-docker run -p 5000:5000 na4va4/transcriptor
+docker run -p 8080:8080 na4va4/kanban-board
 ```
 Open a browser and enter to
-[http://localhost:5000](http://localhost:5000)
+[http://localhost:8080](http://localhost:8080)

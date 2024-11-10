@@ -9,7 +9,6 @@ This is a project build in java whose purpose is to provide the user a kanban bo
 ## Technologies
 ***
 A list of technologies used within the project:
-using the version 3.12.0 and using flask as a web framework
 * [Java](https://www.java.com/es/): Version 17
 * [Spring Boot](https://spring.io/projects/spring-boot): Version 3.3.5
 * [H2 Database](https://www.h2database.com/html/main.html)

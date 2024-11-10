@@ -1,0 +1,43 @@
+.task-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task {
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    position: relative;
+}
+
+.task.priority-1 {
+    background-color: #ff4c4c; /* Rojo para prioridad 1 */
+}
+
+.task.priority-2 {
+    background-color: #ffeb3b; /* Amarillo para prioridad 2 */
+}
+
+.task.priority-3 {
+    background-color: #4caf50; /* Verde para prioridad 3 */
+}
+
+.task.priority-4 {
+    background-color: #51d1f6; /* Verde para prioridad 3 */
+}
+
+.task:hover {
+    opacity: 0.9; /* Efecto hover */
+}
+
+.edit-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
